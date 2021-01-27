@@ -6,6 +6,6 @@ COPY zcqtriangle-v2.yaml /zcqtriangle-v2.yaml
 COPY ./start_zcqtriangle.sh /start_zcqtriangle.sh
 RUN chmod +x /start_zcqtriangle.sh
 
-CMD ["start_zcqtriangle.sh"]
+CMD ["/start_zcqtriangle.sh"]
 
 EXPOSE 9933/tcp
