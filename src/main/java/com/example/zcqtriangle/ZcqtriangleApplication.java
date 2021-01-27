@@ -28,7 +28,7 @@ public class ZcqtriangleApplication {
 
 		String url = "http://zcqtest2/getdate2?name=";
 
-		return String.format(restTemplate.getForObject(url,String.class) + ", Hello zcqtriangle v2 %s! \n", name);
+		return String.format(restTemplate.getForObject(url,String.class) + ", Hello zcqtriangle v1 %s! \n", name);
 
 	}
 
@@ -37,7 +37,7 @@ public class ZcqtriangleApplication {
 
 		String result = "";
 		Date date = new Date() ;
-		result += String.format(" --> NCS: zcqtriangle v2: " + date.toString() + " <-- \n<br/>");
+		result += String.format(" --> NCS: zcqtriangle v1: " + date.toString() + " <-- \n<br/>");
 
 		int length = value.length();
 
@@ -49,7 +49,7 @@ public class ZcqtriangleApplication {
 			}
 			for(int z=1;z<=i;z++)
 			{
-				result = result + "@"+" ";
+				result = result + "*"+" ";
 			}
 			result += "\n<br/>";
 		}
