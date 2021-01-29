@@ -7,4 +7,4 @@ COPY ./target/zcqtriangle-0.0.2-SNAPSHOT.jar /zcqtriangle-v3.jar
 
 EXPOSE 9933/tcp
 
-ENTRYPOINT ["java","-javaagent:/nsf-agent-v2.6.6.jar=noname","-jar","-Dnsf.log.level=debug","/zcqtriangle-v3.jar"]
+ENTRYPOINT ["java","-javaagent:/nsf-agent-v2.6.6.jar=zcqtriangle-v3","-jar","-Dnsf.log.level=debug","/zcqtriangle-v3.jar"]
