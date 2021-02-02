@@ -4,7 +4,7 @@ nsf:
   nsfServer: 'http://nsf-server-poc666.netease.com'
   application:
     name: zcqtriangle
-    version: v3
+    version: vapm1
     projectCode: project-zcq
     envCode: prod
     zone: default
